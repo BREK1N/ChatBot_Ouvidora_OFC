@@ -40,21 +40,10 @@ source venv/bin/activate  # No Windows: venv\Scripts\activate
 ```
 
 **3. Instale as Dependências**
-
-Crie um arquivo `requirements.txt` com o seguinte conteúdo:
-
-```
-langchain
-langchain-openai
-langchain-community
-pypdf
-python-dotenv
-```
-
-Em seguida, instale as dependências:
+ instale as dependências:
 
 ```bash
-pip install -r requirements.txt
+pip install langchain langchain-openai langchain-community pypdf python-dotenv
 ```
 
 **4. Configure as Variáveis de Ambiente**
