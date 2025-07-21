@@ -3,10 +3,10 @@
 import sqlite3
 from datetime import datetime
 
-DB_NAME = "ocorrencias.db"
+DB_NAME = "ocorrencias.db" # Banco de Dados
 
 def conectar():
-    return sqlite3.connect(DB_NAME)
+    return sqlite3.connect(DB_NAME) # conexão com o banco de dados
 
 def criar_tabela_ocorrencias():
     conn = conectar()
