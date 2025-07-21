@@ -1,6 +1,4 @@
-Claro, aqui está uma sugestão de arquivo `README.md` bem estruturado para o seu projeto, com base nos arquivos que você forneceu.
 
------
 
 # ChatBot Ouvidoria OFC
 
