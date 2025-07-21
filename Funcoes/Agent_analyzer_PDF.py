@@ -7,7 +7,7 @@ from Funcoes.PDF import pdf
 def agent_analyzer(input: str) -> str:
     llm = ChatOpenAI(model="gpt-4o", temperature=0)
 
-    pdf_content = pdf()
+    pdf_content = pdf("pdf/rdaer.pdf")
 
     Prompt_Template = ChatPromptTemplate([
         ("system", "Você é um assistente virtual da Ouvidoria que fornece analisa um arquivo PDF e responde com base no conteúdo fornecido."),
