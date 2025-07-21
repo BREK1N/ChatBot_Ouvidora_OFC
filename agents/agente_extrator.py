@@ -4,10 +4,6 @@ from langchain_core.output_parsers import JsonOutputParser
 from Funcoes.PDF import pdf # Reutilizando sua função de leitura de PDF
 
 def extrair_info_ocorrencia(caminho_pdf: str) -> dict:
-    """
-    Analisa um arquivo PDF de ocorrência para extrair o nome de guerra do militar
-    e uma descrição do fato.
-    """
     llm = ChatOpenAI(model="gpt-4o", temperature=0)
     
     try:
@@ -34,7 +30,6 @@ def extrair_info_ocorrencia(caminho_pdf: str) -> dict:
 
     try:
         resposta_json = chain.invoke({"conteudo_pdf": conteudo_pdf})
-        # Exemplo de retorno: {'nome_guerra': 'VICHETTI', 'descricao_infracao': 'Travamento de armamento IMBEL durante procedimento de rendição no Posto 01.'}
         return resposta_json
     except Exception as e:
         return {"erro": f"Não foi possível processar o documento com a IA: {e}"}

@@ -10,10 +10,6 @@ except Exception as e:
     RDAER_CONTENT = f"Erro ao carregar o RDAER: {e}"
 
 def enquadrar(dossie: dict) -> str:
-    """
-    Recebe um dossiê com os dados da infração e analisa com base no RDAER
-    para fornecer o enquadramento e a explicação.
-    """
     # Verifica se o RDAER foi carregado corretamente
     if "Erro ao carregar o RDAER" in RDAER_CONTENT:
         return RDAER_CONTENT
